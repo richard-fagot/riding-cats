@@ -2,4 +2,6 @@ node_modules
 typings
 *.module.js*
 *.component.js*
+*.service.js*
+*.map
 main.js*
