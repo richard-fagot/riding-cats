@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
   moduleId: module.id,
   selector: 'concerts',
   templateUrl: 'concerts.component.html',
+  styleUrls: ['concerts.component.css']
 })
 
 export class ConcertsComponent {
