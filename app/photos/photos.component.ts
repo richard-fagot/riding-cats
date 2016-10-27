@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import {ImageModal} from '../../node_modules/angular2-image-popup/directives/angular2-image-popup/angular2-image-popup.js';
+
 
 @Component({
   moduleId: module.id,
   selector: 'photos',
-  directives: [ImageModal],
   templateUrl: 'photos.component.html',
 })
 
