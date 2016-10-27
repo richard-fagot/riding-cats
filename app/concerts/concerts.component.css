@@ -1,8 +1,15 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic");
 @import url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+
+/*Image de fond*/
+
+/*Strip des dates*/
 body {
 padding: 60px 0px;
-background-color: rgb(220, 220, 220);
+/*background-color: rgb(220, 220, 220);*/
+background: url('../../assets/img/site-background.jpg') no-repeat center fixed;
+-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+background-size: cover; /* version standardisée */
 }
 
 .event-list {
