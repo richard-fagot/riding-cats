@@ -96,17 +96,17 @@ a{
     animation: imageAnimation 36s linear infinite 0s;
 }
 
-.slideshow li:nth-child(1) span { background-image: url('../../assets/img/gallery/00205 (1500x1000).jpg') }
+.slideshow li:nth-child(1) span { background-image: url('../../assets/img/site-logo-cover.jpg'); }
 .slideshow li:nth-child(2) span {
-    background-image: url('../../assets/img/gallery/00213 (1500x1000).jpg');
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    -ms-animation-delay: 6s;
-    animation-delay: 6s;
+	background-image: url('../../assets/img/gallery/00205 (1500x1000).jpg') ;
+	-webkit-animation-delay: 6s;
+	-moz-animation-delay: 6s;
+	-o-animation-delay: 6s;
+	-ms-animation-delay: 6s;
+	animation-delay: 6s;
 }
 .slideshow li:nth-child(3) span {
-    background-image: url('../../assets/img/gallery/IMG_1474.JPG');
+    background-image: url('../../assets/img/gallery/00213 (1500x1000).jpg');
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     -o-animation-delay: 12s;
@@ -114,7 +114,7 @@ a{
     animation-delay: 12s;
 }
 .slideshow li:nth-child(4) span {
-    background-image: url('../../assets/img/gallery/IMG_2794.JPG');
+    background-image: url('../../assets/img/gallery/IMG_1474.JPG');
     -webkit-animation-delay: 18s;
     -moz-animation-delay: 18s;
     -o-animation-delay: 18s;
@@ -122,7 +122,7 @@ a{
     animation-delay: 18s;
 }
 .slideshow li:nth-child(5) span {
-    background-image: url('../../assets/img/gallery/00162 (1500x1001).jpg');
+    background-image: url('../../assets/img/gallery/IMG_2794.JPG');
     -webkit-animation-delay: 24s;
     -moz-animation-delay: 24s;
     -o-animation-delay: 24s;
@@ -130,12 +130,20 @@ a{
     animation-delay: 24s;
 }
 .slideshow li:nth-child(6) span {
-    background-image: url('../../assets/img/gallery/00182 (1500x1001).jpg');
+    background-image: url('../../assets/img/gallery/00162 (1500x1001).jpg');
     -webkit-animation-delay: 30s;
     -moz-animation-delay: 30s;
     -o-animation-delay: 30s;
     -ms-animation-delay: 30s;
     animation-delay: 30s;
+}
+.slideshow li:nth-child(7) span {
+    background-image: url('../../assets/img/gallery/00182 (1500x1001).jpg');
+    -webkit-animation-delay: 36s;
+    -moz-animation-delay: 36s;
+    -o-animation-delay: 36s;
+    -ms-animation-delay: 36s;
+    animation-delay: 36s;
 }
 /* Animation for the slideshow images */
 @-webkit-keyframes imageAnimation {

@@ -8,6 +8,7 @@ import { AccueilComponent }   from './accueil/accueil.component';
 import { PhotosComponent }   from './photos/photos.component';
 import { ConcertsComponent }   from './concerts/concerts.component';
 import { ContactComponent }   from './contact/contact.component';
+import { VideosComponent }   from './videos/videos.component';
 
 import { AppRoutingModule }     from './app-routing.module';
 
@@ -19,6 +20,7 @@ import { AppRoutingModule }     from './app-routing.module';
                   PhotosComponent,
                   ContactComponent,
                   ConcertsComponent,
+                  VideosComponent,
                   ImageModal],
   bootstrap:    [ AppComponent ]
 })

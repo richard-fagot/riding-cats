@@ -4,13 +4,15 @@ import { AccueilComponent }   from './accueil/accueil.component';
 import { PhotosComponent }   from './photos/photos.component';
 import { ConcertsComponent }   from './concerts/concerts.component';
 import { ContactComponent }   from './contact/contact.component';
+import { VideosComponent }   from './videos/videos.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/accueil', pathMatch: 'full' },
   { path: 'accueil',  component: AccueilComponent },
   { path: 'concerts',  component: ConcertsComponent },
   { path: 'contact',  component: ContactComponent },
-  { path: 'photos',  component: PhotosComponent }
+  { path: 'photos',  component: PhotosComponent },
+  { path: 'videos',  component: VideosComponent }
 ];
 
 @NgModule({
