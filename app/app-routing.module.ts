@@ -5,6 +5,8 @@ import { PhotosComponent }   from './photos/photos.component';
 import { ConcertsComponent }   from './concerts/concerts.component';
 import { ContactComponent }   from './contact/contact.component';
 import { VideosComponent }   from './videos/videos.component';
+import { VideoPlaylistComponent }   from './video-playlist/video-playlist.component';
+import { ShowVideoComponent }   from './show-video/show-video.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/accueil', pathMatch: 'full' },
@@ -12,7 +14,20 @@ const routes: Routes = [
   { path: 'concerts',  component: ConcertsComponent },
   { path: 'contact',  component: ContactComponent },
   { path: 'photos',  component: PhotosComponent },
-  { path: 'videos',  component: VideosComponent }
+  { path: 'videos',
+    component: VideosComponent,
+    children: [
+      {
+      path: '',
+      component: VideoPlaylistComponent
+      },
+      {
+      path: 'ppp',
+      outlet: 'show-video',
+      component: ShowVideoComponent
+      }
+    ] },
+  { path: '**', redirectTo: '/accueil', pathMatch: 'full' },
 ];
 
 @NgModule({

@@ -9,6 +9,8 @@ import { PhotosComponent }   from './photos/photos.component';
 import { ConcertsComponent }   from './concerts/concerts.component';
 import { ContactComponent }   from './contact/contact.component';
 import { VideosComponent }   from './videos/videos.component';
+import { VideoPlaylistComponent }   from './video-playlist/video-playlist.component';
+import { ShowVideoComponent }   from './show-video/show-video.component';
 
 import { AppRoutingModule }     from './app-routing.module';
 
@@ -21,6 +23,8 @@ import { AppRoutingModule }     from './app-routing.module';
                   ContactComponent,
                   ConcertsComponent,
                   VideosComponent,
+                  VideoPlaylistComponent,
+                  ShowVideoComponent,
                   ImageModal],
   bootstrap:    [ AppComponent ]
 })

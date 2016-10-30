@@ -15,13 +15,28 @@ var photos_component_1 = require('./photos/photos.component');
 var concerts_component_1 = require('./concerts/concerts.component');
 var contact_component_1 = require('./contact/contact.component');
 var videos_component_1 = require('./videos/videos.component');
+var video_playlist_component_1 = require('./video-playlist/video-playlist.component');
+var show_video_component_1 = require('./show-video/show-video.component');
 var routes = [
     { path: '', redirectTo: '/accueil', pathMatch: 'full' },
     { path: 'accueil', component: accueil_component_1.AccueilComponent },
     { path: 'concerts', component: concerts_component_1.ConcertsComponent },
     { path: 'contact', component: contact_component_1.ContactComponent },
     { path: 'photos', component: photos_component_1.PhotosComponent },
-    { path: 'videos', component: videos_component_1.VideosComponent }
+    { path: 'videos',
+        component: videos_component_1.VideosComponent,
+        children: [
+            {
+                path: '',
+                component: video_playlist_component_1.VideoPlaylistComponent
+            },
+            {
+                path: 'ppp',
+                outlet: 'show-video',
+                component: show_video_component_1.ShowVideoComponent
+            }
+        ] },
+    { path: '**', redirectTo: '/accueil', pathMatch: 'full' },
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
