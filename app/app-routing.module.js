@@ -17,9 +17,11 @@ var contact_component_1 = require('./contact/contact.component');
 var videos_component_1 = require('./videos/videos.component');
 var video_playlist_component_1 = require('./video-playlist/video-playlist.component');
 var show_video_component_1 = require('./show-video/show-video.component');
+var biographie_component_1 = require('./biographie/biographie.component');
 var routes = [
     { path: '', redirectTo: '/accueil', pathMatch: 'full' },
     { path: 'accueil', component: accueil_component_1.AccueilComponent },
+    { path: 'biographie', component: biographie_component_1.BiographieComponent },
     { path: 'concerts', component: concerts_component_1.ConcertsComponent },
     { path: 'contact', component: contact_component_1.ContactComponent },
     { path: 'photos', component: photos_component_1.PhotosComponent },

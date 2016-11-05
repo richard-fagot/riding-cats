@@ -19,6 +19,7 @@ var contact_component_1 = require('./contact/contact.component');
 var videos_component_1 = require('./videos/videos.component');
 var video_playlist_component_1 = require('./video-playlist/video-playlist.component');
 var show_video_component_1 = require('./show-video/show-video.component');
+var biographie_component_1 = require('./biographie/biographie.component');
 var app_routing_module_1 = require('./app-routing.module');
 var AppModule = (function () {
     function AppModule() {
@@ -35,6 +36,7 @@ var AppModule = (function () {
                 videos_component_1.VideosComponent,
                 video_playlist_component_1.VideoPlaylistComponent,
                 show_video_component_1.ShowVideoComponent,
+                biographie_component_1.BiographieComponent,
                 angular2_image_popup_js_1.ImageModal],
             bootstrap: [app_component_1.AppComponent]
         }), 

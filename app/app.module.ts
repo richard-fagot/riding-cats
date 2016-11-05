@@ -11,6 +11,7 @@ import { ContactComponent }   from './contact/contact.component';
 import { VideosComponent }   from './videos/videos.component';
 import { VideoPlaylistComponent }   from './video-playlist/video-playlist.component';
 import { ShowVideoComponent }   from './show-video/show-video.component';
+import { BiographieComponent }   from './biographie/biographie.component';
 
 import { AppRoutingModule }     from './app-routing.module';
 
@@ -25,6 +26,7 @@ import { AppRoutingModule }     from './app-routing.module';
                   VideosComponent,
                   VideoPlaylistComponent,
                   ShowVideoComponent,
+                  BiographieComponent,
                   ImageModal],
   bootstrap:    [ AppComponent ]
 })

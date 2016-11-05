@@ -7,10 +7,12 @@ import { ContactComponent }   from './contact/contact.component';
 import { VideosComponent }   from './videos/videos.component';
 import { VideoPlaylistComponent }   from './video-playlist/video-playlist.component';
 import { ShowVideoComponent }   from './show-video/show-video.component';
+import { BiographieComponent }   from './biographie/biographie.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/accueil', pathMatch: 'full' },
   { path: 'accueil',  component: AccueilComponent },
+  { path: 'biographie', component: BiographieComponent},
   { path: 'concerts',  component: ConcertsComponent },
   { path: 'contact',  component: ContactComponent },
   { path: 'photos',  component: PhotosComponent },
