@@ -19,7 +19,8 @@ const routes: Routes = [
   { path: 'videos', component: VideosComponent,
     children: [
       {path:'', redirectTo:'0', pathMatch:'full'},
-      {path:':id', component: ShowVideoComponent}
+      {path:'', component: VideoPlaylistComponent, outlet: 'playlist'},
+      {path:':id', component: ShowVideoComponent},
     ]
  },
   { path: '**', redirectTo: '/accueil', pathMatch: 'full' },
