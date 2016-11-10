@@ -3,8 +3,15 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class RidingCatsService {
     getYoutubeID(id:number):Promise<string>{
-        console.log("Get the element " + id + " from the playlist");
         return Promise.resolve(this.videoPlaylist[id].youtubeId);
+    }
+
+    getVideoPlaylist():Promise<Array<string>> {
+        let ids = [];
+        this.videoPlaylist.forEach(element => {
+            ids.push(element);
+        });
+        return Promise.resolve(ids);
     }
 
     videoPlaylist = [

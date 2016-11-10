@@ -18,8 +18,14 @@ var RidingCatsService = (function () {
         ];
     }
     RidingCatsService.prototype.getYoutubeID = function (id) {
-        console.log("Get the element " + id + " from the playlist");
         return Promise.resolve(this.videoPlaylist[id].youtubeId);
+    };
+    RidingCatsService.prototype.getVideoPlaylist = function () {
+        var ids = [];
+        this.videoPlaylist.forEach(function (element) {
+            ids.push(element);
+        });
+        return Promise.resolve(ids);
     };
     RidingCatsService = __decorate([
         core_1.Injectable(), 

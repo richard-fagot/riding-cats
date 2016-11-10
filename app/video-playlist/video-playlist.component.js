@@ -9,16 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var riding_cats_service_1 = require('../riding-cats.service');
 var VideoPlaylistComponent = (function () {
-    function VideoPlaylistComponent() {
+    function VideoPlaylistComponent(rcService) {
+        this.rcService = rcService;
     }
+    VideoPlaylistComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.rcService.getVideoPlaylist().then(function (ids) { return _this.youtubeIDs = ids; });
+    };
     VideoPlaylistComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'video-playlist',
             templateUrl: 'video-playlist.component.html',
+            providers: [riding_cats_service_1.RidingCatsService]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [riding_cats_service_1.RidingCatsService])
     ], VideoPlaylistComponent);
     return VideoPlaylistComponent;
 }());
