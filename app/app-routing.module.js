@@ -25,19 +25,13 @@ var routes = [
     { path: 'concerts', component: concerts_component_1.ConcertsComponent },
     { path: 'contact', component: contact_component_1.ContactComponent },
     { path: 'photos', component: photos_component_1.PhotosComponent },
-    { path: 'videos',
-        component: videos_component_1.VideosComponent,
+    { path: 'videos', component: videos_component_1.VideosComponent,
         children: [
-            {
-                path: '',
-                component: video_playlist_component_1.VideoPlaylistComponent
-            },
-            {
-                path: 'ppp',
-                outlet: 'show-video',
-                component: show_video_component_1.ShowVideoComponent
-            }
-        ] },
+            { path: '', redirectTo: '0', pathMatch: 'full' },
+            { path: '', component: video_playlist_component_1.VideoPlaylistComponent, outlet: 'playlist' },
+            { path: ':id', component: show_video_component_1.ShowVideoComponent },
+        ]
+    },
     { path: '**', redirectTo: '/accueil', pathMatch: 'full' },
 ];
 var AppRoutingModule = (function () {

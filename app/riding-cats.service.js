@@ -9,17 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var RidingCatsService = (function () {
+    function RidingCatsService() {
+        this.videoPlaylist = [
+            { youtubeId: "Wi94ce_N2ps" },
+            { youtubeId: "UbDvJQFx2CU" },
+            { youtubeId: "88UVcdiP7Bw" },
+        ];
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'app/app.component.html',
-        }), 
+    RidingCatsService.prototype.getYoutubeID = function (id) {
+        console.log("Get the element " + id + " from the playlist");
+        return Promise.resolve(this.videoPlaylist[id].youtubeId);
+    };
+    RidingCatsService = __decorate([
+        core_1.Injectable(), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], RidingCatsService);
+    return RidingCatsService;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.RidingCatsService = RidingCatsService;
+//# sourceMappingURL=riding-cats.service.js.map

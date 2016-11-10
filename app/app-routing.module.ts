@@ -16,19 +16,13 @@ const routes: Routes = [
   { path: 'concerts',  component: ConcertsComponent },
   { path: 'contact',  component: ContactComponent },
   { path: 'photos',  component: PhotosComponent },
-  { path: 'videos',
-    component: VideosComponent,
+  { path: 'videos', component: VideosComponent,
     children: [
-      {
-      path: '',
-      component: VideoPlaylistComponent
-      },
-      {
-      path: 'ppp',
-      outlet: 'show-video',
-      component: ShowVideoComponent
-      }
-    ] },
+      {path:'', redirectTo:'0', pathMatch:'full'},
+      {path:'', component: VideoPlaylistComponent, outlet: 'playlist'},
+      {path:':id', component: ShowVideoComponent},
+    ]
+ },
   { path: '**', redirectTo: '/accueil', pathMatch: 'full' },
 ];
 
