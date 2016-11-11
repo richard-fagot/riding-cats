@@ -12,20 +12,17 @@ var core_1 = require('@angular/core');
 var RidingCatsService = (function () {
     function RidingCatsService() {
         this.videoPlaylist = [
-            { youtubeId: "Wi94ce_N2ps" },
-            { youtubeId: "UbDvJQFx2CU" },
-            { youtubeId: "88UVcdiP7Bw" },
+            { youtubeId: "Wi94ce_N2ps", title: "Teaser" },
+            { youtubeId: "UbDvJQFx2CU", title: "Brand new cadillac" },
+            { youtubeId: "88UVcdiP7Bw", title: "Sleepwalk" },
+            { youtubeId: "Zq4GQ44gkcg", title: "Whole lotta Shakin" },
         ];
     }
     RidingCatsService.prototype.getYoutubeID = function (id) {
         return Promise.resolve(this.videoPlaylist[id].youtubeId);
     };
     RidingCatsService.prototype.getVideoPlaylist = function () {
-        var ids = [];
-        this.videoPlaylist.forEach(function (element) {
-            ids.push(element.youtubeId);
-        });
-        return Promise.resolve(ids);
+        return Promise.resolve(this.videoPlaylist);
     };
     RidingCatsService = __decorate([
         core_1.Injectable(), 

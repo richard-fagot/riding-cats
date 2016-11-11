@@ -28,7 +28,7 @@ export class ShowVideoComponent implements OnInit {
   }
 
   setTrustedYoutubeURL(youtubeID):void {
-    let untrusted = "https://www.youtube.com/embed/"+youtubeID+"?rel=0&amp;controls=0&amp;showinfo=0";
+    let untrusted = "https://www.youtube.com/embed/"+youtubeID+"?rel=0&amp;controls=1&amp;showinfo=0";
     this.youtubeURLTrusted = this.sanitizer.bypassSecurityTrustResourceUrl(untrusted);
   }
 }

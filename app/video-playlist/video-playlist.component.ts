@@ -11,12 +11,12 @@ import {RidingCatsService} from '../riding-cats.service';
 })
 
 export class VideoPlaylistComponent implements OnInit{
-  youtubeIDs: Array<string>;
+  youtubeVideos: Array<Object>;
 
   constructor(private rcService: RidingCatsService){}
 
   ngOnInit():void {
-    this.rcService.getVideoPlaylist().then(ids => this.youtubeIDs = ids);
+    this.rcService.getVideoPlaylist().then(ids => this.youtubeVideos = ids);
   }
   
 }

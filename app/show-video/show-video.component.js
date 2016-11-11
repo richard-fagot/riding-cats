@@ -28,7 +28,7 @@ var ShowVideoComponent = (function () {
         });
     };
     ShowVideoComponent.prototype.setTrustedYoutubeURL = function (youtubeID) {
-        var untrusted = "https://www.youtube.com/embed/" + youtubeID + "?rel=0&amp;controls=0&amp;showinfo=0";
+        var untrusted = "https://www.youtube.com/embed/" + youtubeID + "?rel=0&amp;controls=1&amp;showinfo=0";
         this.youtubeURLTrusted = this.sanitizer.bypassSecurityTrustResourceUrl(untrusted);
     };
     ShowVideoComponent = __decorate([

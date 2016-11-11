@@ -16,7 +16,7 @@ var VideoPlaylistComponent = (function () {
     }
     VideoPlaylistComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.rcService.getVideoPlaylist().then(function (ids) { return _this.youtubeIDs = ids; });
+        this.rcService.getVideoPlaylist().then(function (ids) { return _this.youtubeVideos = ids; });
     };
     VideoPlaylistComponent = __decorate([
         core_1.Component({
