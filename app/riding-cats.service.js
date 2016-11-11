@@ -23,7 +23,7 @@ var RidingCatsService = (function () {
     RidingCatsService.prototype.getVideoPlaylist = function () {
         var ids = [];
         this.videoPlaylist.forEach(function (element) {
-            ids.push(element);
+            ids.push(element.youtubeId);
         });
         return Promise.resolve(ids);
     };

@@ -9,7 +9,7 @@ export class RidingCatsService {
     getVideoPlaylist():Promise<Array<string>> {
         let ids = [];
         this.videoPlaylist.forEach(element => {
-            ids.push(element);
+            ids.push(element.youtubeId);
         });
         return Promise.resolve(ids);
     }
