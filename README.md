@@ -1,29 +1,31 @@
-# riding-cats
+# RidingCats
 
+This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.18.
 
-## Déploiement sur OVH
+## Development server
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-### Configuration du serveur
+## Code scaffolding
 
-Le nouveau système de routing d'angular 2 s'appui sur l'historique du navigateur ce qui fait disparaître le `/#/route` au profit d'un `/route`. Du coup, le serveur cherche ce chemin et renvoi un 404. Pour éviter cela, il faut configurer le serveur pour qu'il redirige les requête vers `/index.html`.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
 
+## Build
 
-Chez OVH, ça se faire comme ça ([source](https://stackoverflow.com/questions/39185802/configuring-htaccess-file-to-serve-angular-and-api-routes/39186052#39186052)) dans le `.htaccess` :
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-```bash
-RewriteEngine On
-# If an existing asset or directory is requested go to it as it is
-RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
-RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
-RewriteRule ^ - [L]
+## Running unit tests
 
-# If the requested resource doesn't exist, use index.html (html5mode)
-RewriteRule ^ /index.html
-```
-### Packaging de l'appli
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-le `npm start` utilisé tel qu'indiqué dans le tutoriel [Tour of heroes](https://angular.io/docs/ts/latest/tutorial/) génère tous les fichiers nécessaires. Il suffit de copier tout le répertoire projet à la racine du serveur web.
+## Running end-to-end tests
 
-Ce **N'EST PAS** la meilleure solution.
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
 
-Il vaut mieux passer par **angular-cli**.
+## Deploying to Github Pages
+
+Run `ng github-pages:deploy` to deploy to Github Pages.
+
+## Further help
+
+To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

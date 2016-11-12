@@ -1,0 +1,25 @@
+<h1>Hey</h1>
+<!--
+<div class="container">
+  <div class="row" *ngFor="let line of gallery">
+    <div class="col-xs-2" *ngFor="let img of line">
+      <img class="img-thumbnail img-responsive"   src="{{img.thumb}}"(click)="OpenImageModel(img.img,images)" alt='Image' />
+    </div>
+  </div>
+</div>
+<div *ngIf="openModalWindow">
+  <ImageModal [modalImages]="images" [imagePointer] = "imagePointer" (cancelEvent) ="cancelImageModel()"></ImageModal>
+</div>
+-->
+
+
+<div class="row" *ngFor="let line of gallery">
+  <div *ngFor="let img of line;let i = index" class="cssbox">
+    <a id="image{{i}}" href="#image{{i}}"><img class="cssbox_thumb" src="{{img.thumb}}" />
+          <span class="cssbox_full"><img src="{{img.img}}" /></span> 
+      </a>
+      <a class="cssbox_close" href="#void"></a>
+      <a class="cssbox_prev" href="#image1">&lt;</a>
+      <a class="cssbox_next" href="#image3">&gt;</a>
+  </div>
+</div>
