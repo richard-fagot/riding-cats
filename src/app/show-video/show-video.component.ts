@@ -22,7 +22,7 @@ export class ShowVideoComponent implements OnInit {
     this.route.params.forEach((params: Params) => {
       let id = +params['id'];
       this.rcService.getYoutubeID(id)
-      .then(youtubeId => this.setTrustedYoutubeURL(youtubeId)); 
+      .then(videoID => this.setTrustedYoutubeURL(videoID)); 
     });
   }
 

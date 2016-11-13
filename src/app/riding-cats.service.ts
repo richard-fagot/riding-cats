@@ -1,21 +1,23 @@
 import { Injectable } from '@angular/core';
 
+import { Video } from './interfaces/video'
+
 @Injectable()
 export class RidingCatsService {
 
-  getYoutubeID(id:number):Promise<string>{
-        return Promise.resolve(this.videoPlaylist[id].youtubeId);
+    getYoutubeID(id: number): Promise<string> {
+        return Promise.resolve(this.videoPlaylist[id].videoID);
     }
 
-    getVideoPlaylist():Promise<Array<Object>> {
+    getVideoPlaylist(): Promise<Array<Video>> {
         return Promise.resolve(this.videoPlaylist);
     }
 
-    videoPlaylist = [
-        {youtubeId: "Wi94ce_N2ps", title:"Teaser"},
-        {youtubeId: "UbDvJQFx2CU", title:"Brand new cadillac"},
-        {youtubeId: "88UVcdiP7Bw", title:"Sleepwalk"},
-        {youtubeId: "Zq4GQ44gkcg", title:"Whole lotta Shakin"},
+    videoPlaylist: Video[] = [
+        { videoID: "Wi94ce_N2ps", title: "Teaser" },
+        { videoID: "UbDvJQFx2CU", title: "Brand new cadillac" },
+        { videoID: "88UVcdiP7Bw", title: "Sleepwalk" },
+        { videoID: "Zq4GQ44gkcg", title: "Whole lotta Shakin" },
     ];
 
 }
