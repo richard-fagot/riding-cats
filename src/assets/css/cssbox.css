@@ -32,9 +32,9 @@ span.cssbox_full img {
   box-shadow: 0 0 20px black;
 }
 
-a.cssbox_close,
-a.cssbox_prev,
-a.cssbox_next {
+div.cssbox_close,
+div.cssbox_prev,
+div.cssbox_next {
   position: fixed;
   text-decoration: none;
   visibility: hidden;
@@ -42,36 +42,50 @@ a.cssbox_next {
   font-size: 36px;
 }
 
-a.cssbox_close {
+div.cssbox_close {
   top: 1%;
   right: 1%
 }
 
-a.cssbox_close::after {
+div.cssbox_close::after {
   content: '\00d7';
 }
 
-a.cssbox_prev,
-a.cssbox_next {
+div.cssbox_prev,
+div.cssbox_next {
   top: 50%;
   transform: translate(0%, -50%);
 }
 
-a.cssbox_prev {
+div.cssbox_prev {
   left: 5%;
 }
 
-a.cssbox_next {
+div.cssbox_next {
   right: 5%;
 }
-
+/*
 a:target ~ a.cssbox_close,
 a:target ~ a.cssbox_prev,
 a:target ~ a.cssbox_next {
   visibility: visible;
 }
+*/
+div.cssbox_close,
+div.cssbox_prev,
+div.cssbox_next {
+  visibility: visible;
+  cursor: pointer;
+}
 
+/*
 a:target > img.cssbox_thumb + span.cssbox_full {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
+}
+*/
+img.cssbox_thumb + span.cssbox_full {
   visibility: visible;
   opacity: 1;
   pointer-events: initial;
@@ -81,3 +95,7 @@ span.cssbox_full {
   cursor: initial;
 }
 /* This is the end of CSSBox */
+
+.hidden {
+  visibility: hidden;
+}
