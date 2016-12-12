@@ -13,6 +13,9 @@ var PhotosComponent = (function () {
     function PhotosComponent() {
         this.openModalWindow = false;
         this.list = [
+            "Dunes.jpg",
+            "Dunes_15.jpg",
+            "Dunes_12.jpg",
             "00162 (1500x1001).jpg",
             "00169 (1500x1000).jpg",
             "00173 (1500x1000).jpg",
