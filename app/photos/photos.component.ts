@@ -93,6 +93,10 @@ export class PhotosComponent implements OnInit {
         this.images.push({thumb: thumb_path, img: path});
         line.push({thumb: thumb_path, img: path});
       }
+
+      if(line.length > 0) {
+        this.gallery.push(line);
+      }
     }
 
    OpenImageModel(imageSrc,images) {

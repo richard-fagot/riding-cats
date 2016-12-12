@@ -87,6 +87,9 @@ var PhotosComponent = (function () {
             this.images.push({ thumb: thumb_path, img: path });
             line.push({ thumb: thumb_path, img: path });
         }
+        if (line.length > 0) {
+            this.gallery.push(line);
+        }
     };
     PhotosComponent.prototype.OpenImageModel = function (imageSrc, images) {
         //alert('OpenImages');
