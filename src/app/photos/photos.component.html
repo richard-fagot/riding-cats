@@ -1,4 +1,3 @@
-<h1>Hey</h1>
 <!--
 <div class="container">
   <div class="row" *ngFor="let line of gallery">
@@ -12,16 +11,17 @@
 </div>
 -->
 
+<div class="container">
+  <div class="row" *ngFor="let line of gallery; let lineIndex = index">
+    <div *ngFor="let img of line;let rowIndex = index" class="cssbox col-xs-2">
 
-<div class="row" *ngFor="let line of gallery; let lineIndex = index">
-  <div *ngFor="let img of line;let rowIndex = index" class="cssbox">
-    <div (click)="showImageOfIndex(lineIndex*6+rowIndex)" style="cursor:pointer;"><img class="cssbox_thumb" src="{{img.thumb}}" />
-          <span [class.cssbox_full]="isVisible(lineIndex*6+rowIndex)" [class.hidden]="!isVisible(lineIndex*6+rowIndex)"><img src="{{img.img}}" /></span> 
+      <div (click)="showImageOfIndex(lineIndex*6+rowIndex)" style="cursor:pointer;"><img class="cssbox_thumb img-thumbnail img-responsive" src="{{img.thumb}}" />
+        <span [class.cssbox_full]="isVisible(lineIndex*6+rowIndex)" [class.hidden]="!isVisible(lineIndex*6+rowIndex)"><img src="{{img.img}}" /></span>
       </div>
+
       <div [class.cssbox_close]="isVisible(lineIndex*6+rowIndex)" [class.hidden]="!isVisible(lineIndex*6+rowIndex)" (click)="hideImage()"></div>
       <div [class.cssbox_prev]="isVisible(lineIndex*6+rowIndex)" [class.hidden]="!isVisible(lineIndex*6+rowIndex)" (click)="showPreviousImage()">&lt;</div>
       <div [class.cssbox_next]="isVisible(lineIndex*6+rowIndex)" [class.hidden]="!isVisible(lineIndex*6+rowIndex)" (click)="showNextImage()">&gt;</div>
+    </div>
   </div>
 </div>
-
-
