@@ -16,6 +16,8 @@ import { ShowVideoComponent } from './show-video/show-video.component';
 import { ContactComponent } from './contact/contact.component';
 import { PhotosComponent } from './photos/photos.component';
 
+import {MessagesService} from './messages-service.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +36,7 @@ import { PhotosComponent } from './photos/photos.component';
     HttpModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [MessagesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
