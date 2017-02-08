@@ -16,7 +16,7 @@ span.cssbox_full {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s linear;
-  z-index: 1;
+  z-index: 10;
 }
 
 span.cssbox_full img {
@@ -42,7 +42,7 @@ div.cssbox_next {
   visibility: hidden;
   color: white;
   font-size: 36px;
-  z-index: 1;
+  z-index: 10;
 }
 
 div.cssbox_close {
