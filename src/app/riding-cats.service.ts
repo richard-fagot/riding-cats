@@ -14,6 +14,7 @@ export class RidingCatsService {
     }
 
     videoPlaylist: Video[] = [
+        { videoID: "vEe2oojnCgY", title: "Festival Rockabilly Tarbes" },
         { videoID: "Wi94ce_N2ps", title: "Teaser" },
         { videoID: "UbDvJQFx2CU", title: "Brand new cadillac" },
         { videoID: "88UVcdiP7Bw", title: "Sleepwalk" },
