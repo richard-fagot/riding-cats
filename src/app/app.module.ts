@@ -15,6 +15,7 @@ import { VideoPlaylistComponent } from './video-playlist/video-playlist.componen
 import { ShowVideoComponent } from './show-video/show-video.component';
 import { ContactComponent } from './contact/contact.component';
 import { PhotosComponent } from './photos/photos.component';
+import { PresseComponent } from './presse/presse.component';
 
 import {MessagesService} from './messages-service.service';
 
@@ -29,6 +30,7 @@ import {MessagesService} from './messages-service.service';
     ShowVideoComponent,
     ContactComponent,
     PhotosComponent,
+    PresseComponent
   ],
   imports: [
     BrowserModule,

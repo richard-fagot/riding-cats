@@ -8,6 +8,7 @@ import { VideosComponent } from './videos/videos.component';
 import { VideoPlaylistComponent } from './video-playlist/video-playlist.component';
 import { ShowVideoComponent }   from './show-video/show-video.component';
 import { BiographieComponent } from './biographie/biographie.component';
+import { PresseComponent } from './presse/presse.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/accueil', pathMatch: 'full' },
@@ -16,6 +17,8 @@ const routes: Routes = [
   { path: 'concerts',  component: ConcertsComponent },
   { path: 'contact',  component: ContactComponent },
   { path: 'photos',  component: PhotosComponent },
+  { path: 'photos',  component: PhotosComponent },
+  { path: 'presse', component: PresseComponent},
   { path: 'videos', component: VideosComponent,
     children: [
       {path:'', redirectTo:'0', pathMatch:'full'},
