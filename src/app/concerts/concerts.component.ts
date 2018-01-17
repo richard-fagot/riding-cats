@@ -9,6 +9,11 @@ import { Component } from '@angular/core';
 export class ConcertsComponent {
 
   events = [
+  { year:'2018',
+    events: [
+      {day:'1', month:'JUN', title:'Kustom & Décibel', location:'Saint-Maurin(47)', img:'../../assets/img/events/KustomDecibel.png', fbLink:'https://www.facebook.com/events/557682984592603/'},
+      {day:'10', month:'FEV', title:'Soirée Rockabilly', location:'Py Loubressac (46)', img:'../../assets/img/events/py_loubressac.png', fbLink:'https://www.facebook.com/events/1835819276459532/'},
+    ] }  
   { year: '2017',
     events: [
       {day:'03', month:'NOV', title:'Soirée privée', location:'Haute-Garonne (31)', img:'../../assets/img/events/soiree-privee.jpg', fbLink:''},
