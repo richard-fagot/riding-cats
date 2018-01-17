@@ -5,23 +5,6 @@ import { Message } from './model/message';
 
 @Injectable()
 export class MessagesService {
-  private msg: BehaviorSubject<any> = new BehaviorSubject(this.french);
-
-  
-  get messages(): Observable<string> {
-    return this.msg.asObservable();
-  }
-  
-
-  setLocale(locale: string) {
-    switch (locale) {
-      case 'en':
-        this.msg.next(this.english);
-        break;
-      default:
-        this.msg.next(this.french);
-    }
-  }
 
   english = {
     news: 'NEWS',
@@ -56,4 +39,24 @@ export class MessagesService {
     bioFormation: '<p><b><u>Formation</u></b></p><p>Pierre Dorso : Vocal /Lead Guitar</p><p>Fred N. : Drums Choeur</p><p>Fred C. : Double bass</p><p></p><p><b><u>Remplaçants</u></b></p><p>Stéphane Broyer : Drums</p><p>Eric Tantot : Double bass</p>',
     bioDisco: '<p><b><u>Discographie</u></b></p><p>Two Days Recording Rockabilly</p><p>CD 19 titres</p>',
   };
+  
+  private msg: BehaviorSubject<any> = new BehaviorSubject(this.french);
+
+  
+  get messages(): Observable<string> {
+    return this.msg.asObservable();
+  }
+  
+
+  setLocale(locale: string) {
+    switch (locale) {
+      case 'en':
+        this.msg.next(this.english);
+        break;
+      default:
+        this.msg.next(this.french);
+    }
+  }
+
+ 
 }

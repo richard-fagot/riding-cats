@@ -74,7 +74,7 @@ a{
 }
 .slideshow:after {
     content: '';
-    background: transparent url(../images/pattern.png) repeat top left;
+    background: transparent url('../../assets/img/pattern.png') repeat top left;
 }
 .slideshow li span {
     width: 100%;
@@ -98,7 +98,7 @@ a{
 
 .slideshow li:nth-child(1) span { background-image: url('../../assets/img/site-logo-cover.jpg'); }
 .slideshow li:nth-child(2) span {
-	background-image: url('../../assets/img/gallery/00205 (1500x1000).jpg') ;
+	background-image: url('../../assets/img/gallery/slideshow01.jpg') ;
 	-webkit-animation-delay: 6s;
 	-moz-animation-delay: 6s;
 	-o-animation-delay: 6s;
@@ -106,7 +106,7 @@ a{
 	animation-delay: 6s;
 }
 .slideshow li:nth-child(3) span {
-    background-image: url('../../assets/img/gallery/00213 (1500x1000).jpg');
+    background-image: url('../../assets/img/gallery/slideshow02.jpg');
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     -o-animation-delay: 12s;
@@ -122,7 +122,7 @@ a{
     animation-delay: 18s;
 }
 .slideshow li:nth-child(5) span {
-    background-image: url('../../assets/img/gallery/00190 (1500x1001).jpg');
+    background-image: url('../../assets/img/gallery/slideshow03.jpg');
     -webkit-animation-delay: 24s;
     -moz-animation-delay: 24s;
     -o-animation-delay: 24s;
@@ -130,7 +130,7 @@ a{
     animation-delay: 24s;
 }
 .slideshow li:nth-child(6) span {
-    background-image: url('../../assets/img/gallery/00162 (1500x1001).jpg');
+    background-image: url('../../assets/img/gallery/slideshow04.jpg');
     -webkit-animation-delay: 30s;
     -moz-animation-delay: 30s;
     -o-animation-delay: 30s;
@@ -138,7 +138,7 @@ a{
     animation-delay: 30s;
 }
 .slideshow li:nth-child(7) span {
-    background-image: url('../../assets/img/gallery/00182 (1500x1001).jpg');
+    background-image: url('../../assets/img/gallery/slideshow05.jpg');
     -webkit-animation-delay: 36s;
     -moz-animation-delay: 36s;
     -o-animation-delay: 36s;
