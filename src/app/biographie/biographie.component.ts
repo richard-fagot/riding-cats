@@ -11,9 +11,7 @@ import { MessagesService } from '../messages.service';
 export class BiographieComponent {
   messages: any;
 
-  constructor(private messagesService: MessagesService) {
-    
-  }
+  constructor(private messagesService: MessagesService) {}
 
   ngOnInit() {
      this.messagesService.messages.subscribe(msg => {this.messages = msg;});

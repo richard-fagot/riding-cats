@@ -12,7 +12,7 @@ export class ConcertsComponent implements OnInit {
 
   events = null;
 
-  constructor(private rcService: RidingCatsService){}
+  constructor(private rcService: RidingCatsService) {}
 
   ngOnInit() {
     this.rcService.getConcertslist().then(concerts => this.events = concerts);
