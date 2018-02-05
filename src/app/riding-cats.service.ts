@@ -28,4 +28,7 @@ export class RidingCatsService {
         return this.http.get('assets/data/concerts.json').toPromise();
     }
 
+    getPhotoList(): Promise<any> {
+        return this.http.get('assets/data/gallery.json').toPromise();
+    }
 }
