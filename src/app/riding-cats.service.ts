@@ -1,9 +1,20 @@
+import { HttpClient } from '@angular/common/http';
+
 import { Injectable } from '@angular/core';
 
-import { Video } from './interfaces/video'
+import { Video } from './interfaces/video';
 
 @Injectable()
 export class RidingCatsService {
+    videoPlaylist: Video[] = [
+        { videoID: "vEe2oojnCgY", title: "Festival Rockabilly Tarbes" },
+        { videoID: "Wi94ce_N2ps", title: "Teaser" },
+        { videoID: "UbDvJQFx2CU", title: "Brand new cadillac" },
+        { videoID: "88UVcdiP7Bw", title: "Sleepwalk" },
+        { videoID: "Zq4GQ44gkcg", title: "Whole lotta Shakin" },
+    ];
+
+    constructor(private http: HttpClient) { }
 
     getYoutubeID(id: number): Promise<string> {
         return Promise.resolve(this.videoPlaylist[id].videoID);
@@ -13,12 +24,8 @@ export class RidingCatsService {
         return Promise.resolve(this.videoPlaylist);
     }
 
-    videoPlaylist: Video[] = [
-        { videoID: "vEe2oojnCgY", title: "Festival Rockabilly Tarbes" },
-        { videoID: "Wi94ce_N2ps", title: "Teaser" },
-        { videoID: "UbDvJQFx2CU", title: "Brand new cadillac" },
-        { videoID: "88UVcdiP7Bw", title: "Sleepwalk" },
-        { videoID: "Zq4GQ44gkcg", title: "Whole lotta Shakin" },
-    ];
+    getConcertslist(): Promise<any> {
+        return this.http.get('assets/data/concerts.json').toPromise();
+    }
 
 }
