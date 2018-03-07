@@ -20,8 +20,8 @@
 						<ul>
 							<li class="twitter" style="width:34%;"><a href="#">&nbsp;</a></li>
 							<li class="facebook" style="width:33%;">
-								<a *ngIf="event.fbLink !== ''"  href="{{event.fbLink}}"><span class="fa fa-facebook"></span></a>
-								<a *ngIf="event.fbLink === ''"  href="#">&nbsp;</a>
+								<a *ngIf="event.fblink !== ''"  [href]="event.fblink"><span class="fa fa-facebook"></span></a>
+								<a *ngIf="event.fblink === ''"  href="#">&nbsp;</a>
 							</li>
 							<li class="google-plus" style="width:33%;"><a href="#">&nbsp;</a></li>
 						</ul>
