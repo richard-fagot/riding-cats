@@ -2,7 +2,9 @@
   { "year":"2019",
     "events": [
       {"day":"09", "month":"JUN", "title":"Festi'Chap", "location":"Riding cats en concert pour le festival Festi'chap dans la cour du chateau de La Chapelle Gautier (77)", "img":"../../assets/img/events/festichap.jpg", "fblink":""},
-      {"day":"03", "month":"MAR", "title":"Carcassonne Tattoo Convention", "location":"Carcassonne (11)", "img":"../../assets/img/events/tattoo_convention.jpg", "fblink":""}
+      {"day":"02", "month":"JUN", "title":"Kustom & Décibel", "location":"Saint-Maurin (47)", "img":"../../assets/img/events/kustom-2019.jpg", "fblink":"https://www.facebook.com/events/1076173409210522/"},
+      {"day":"03", "month":"MAR", "title":"Carcassonne Tattoo Convention", "location":"Carcassonne (11)", "img":"../../assets/img/events/tattoo_convention.jpg", "fblink":""},
+      {"day":"26", "month":"JAN", "title":"L'acoustic Bar", "location":"Montauban (82)", "img":"../../assets/img/events/acoustic-bar.jpg", "fblink":""}
     ] },  
   { "year":"2018",
     "events": [
