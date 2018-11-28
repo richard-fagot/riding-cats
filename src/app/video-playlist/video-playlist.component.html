@@ -1,4 +1,4 @@
-<div *ngFor="let vid of youtubeVideos; let i = index" class="col-md-2 text-center">
+<div *ngFor="let vid of youtubeVideos; let i = index" class="col-md-3 text-center">
     <a routerLink="{{i}}"><img src="http://img.youtube.com/vi/{{vid.videoID}}/0.jpg" width="150px" class="img-rounded"/></a>
     <h4 class="text-center" style="color:#f9c2c2;background-color:#6e3a34">{{vid.title}}</h4>
 </div>

@@ -7,6 +7,7 @@ import { Video } from './interfaces/video';
 @Injectable()
 export class RidingCatsService {
     videoPlaylist: Video[] = [
+        { videoID: "LAZCS5Z4dP0", title: "Cos on the road"},
         { videoID: "rXzUgrbFKfc", title: "Kustom Decibel 2018"},
         { videoID: "vEe2oojnCgY", title: "Festival Rockabilly Tarbes" },
         { videoID: "Wi94ce_N2ps", title: "Teaser" },

@@ -8,7 +8,8 @@
     ] },  
   { "year":"2018",
     "events": [
-	  {"day":"3", "month":"NOV", "title":"Soirée dansante", "location":"Brens (81)", "img":"../../assets/img/events/Brens.jpg", "fblink":""}, 
+	  {"day":"06", "month":"DEC", "title":"Concert Privé", "location":"Montauban (82)", "img":"../../assets/img/events/concert-prive_montauban.jpg", "fblink":""}, 
+	  {"day":"03", "month":"NOV", "title":"Soirée dansante", "location":"Brens (81)", "img":"../../assets/img/events/Brens.jpg", "fblink":""}, 
 	  {"day":"19", "month":"OCT", "title":"Caravan Serail", "location":"Fenouillet (31)", "img":"../../assets/img/events/vinyle.png", "fblink":"https://www.facebook.com/events/276438136307450/"}, 
     {"day":"23", "month":"SEP", "title":"US Niglo Show", "location":"St Gilles (30)", "img":"../../assets/img/events/bikesncar.jpg", "fblink":"https://www.facebook.com/events/247695342748536/"}, 
       {"day":"22", "month":"SEP", "title":"Monde de l'auto samatan 2018", "location":"Samatan (32)", "img":"../../assets/img/events/monde-de-auto.png", "fblink":"https://www.facebook.com/events/138166603500115/"}, 
