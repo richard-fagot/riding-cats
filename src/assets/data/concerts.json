@@ -1,10 +1,12 @@
 [
   { "year":"2020",
     "events": [
-      {"day":"15", "month":"AOU", "title":"Concert Rockabilly", "location":"Memphis (US)", "img":"../../assets/img/events/caravan_serail.jpg", "fblink":""},
-      {"day":"14", "month":"AOU", "title":"Concert Rockabilly", "location":"Memphis (US)", "img":"../../assets/img/events/memphis.jpg", "fblink":""},
+      {"day":"20", "month":"AOU", "title":"Nouvelle-Orléans (US)", "location":"Nouvelle-Orléans (US)", "img":"../../assets/img/events/nouvelle_orlean.jpg", "fblink":""},
+      {"day":"18", "month":"AOU", "title":"Natchez Mississippi (US)", "location":"Natchez Mississippi (US)", "img":"../../assets/img/events/natchez.jpg", "fblink":""},
+      {"day":"15", "month":"AOU", "title":"Memphis (US)", "location":"Memphis (US)", "img":"../../assets/img/events/caravan_serail.jpg", "fblink":""},
+      {"day":"14", "month":"AOU", "title":"Memphis (US)", "location":"Memphis (US)", "img":"../../assets/img/events/memphis.jpg", "fblink":""},
       {"day":"10", "month":"AOU", "title":"Sun Session", "location":"Nashville (US)", "img":"../../assets/img/events/sun.jpg", "fblink":""},
-      {"day":"6-8", "month":"AOU", "title":"Concert Rockabilly", "location":"New York (US)", "img":"../../assets/img/events/new-york.jpg", "fblink":""},
+      {"day":"6-8", "month":"AOU", "title":"New York (US)", "location":"New York (US)", "img":"../../assets/img/events/new-york.jpg", "fblink":""},
       {"day":"16", "month":"MAI", "title":"Montauban Tattoo Festival", "location":"Montauban (82)", "img":"../../assets/img/events/montauban.jpg", "fblink":""},
       {"day":"06", "month":"MAR", "title":"Soirée Gatorgumbo au Madison", "location":"Aucamville (31)", "img":"../../assets/img/events/Brens.jpg", "fblink":""}
     ] },
