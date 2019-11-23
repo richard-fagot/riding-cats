@@ -7,8 +7,15 @@
       {"day":"14", "month":"AOU", "title":"Memphis (US)", "location":"Memphis (US)", "img":"../../assets/img/events/memphis.jpg", "fblink":""},
       {"day":"10", "month":"AOU", "title":"Sun Session", "location":"Nashville (US)", "img":"../../assets/img/events/sun.jpg", "fblink":""},
       {"day":"6-8", "month":"AOU", "title":"New York (US)", "location":"New York (US)", "img":"../../assets/img/events/new-york.jpg", "fblink":""},
-      {"day":"16", "month":"MAI", "title":"Montauban Tattoo Festival", "location":"Montauban (82)", "img":"../../assets/img/events/montauban.jpg", "fblink":""},
-      {"day":"06", "month":"MAR", "title":"Soirée Gatorgumbo au Madison", "location":"Aucamville (31)", "img":"../../assets/img/events/Brens.jpg", "fblink":""}
+      {"day":"21", "month":"JUN", "title":"Pélerinage des motards", "location":"Lourdes (65)", "img":"../../assets/img/events/lourdes2.jpg", "fblink":""},
+      {"day":"13", "month":"JUN", "title":"La nuit des chiens bleus, en Guest Charly Scooter", "location":"Najac (12)", "img":"../../assets/img/events/scooter.jpg", "fblink":""},
+      {"day":"17", "month":"MAI", "title":"Montauban Tattoo Festival", "location":"Montauban (82)", "img":"../../assets/img/events/montauban.jpg", "fblink":"https://www.facebook.com/montaubantattoo/posts/808073502888345"},
+      {"day":"09", "month":"MAI", "title":"French Week", "location":"lac du Gabas (64)", "img":"../../assets/img/events/french-week.jpg", "fblink":"https://www.facebook.com/events/1240237762766888/"},
+      {"day":"02", "month":"MAI", "title":"Concert à La Rhue", "location":"Jumilhac-le-grand (24)", "img":"../../assets/img/events/la-rhue.jpg", "fblink":""},
+      {"day":"18", "month":"AVR", "title":"KRK festival biker", "location":"Anglet (64)", "img":"../../assets/img/events/KRK.png", "fblink":""},
+      {"day":"28", "month":"MAR", "title":"Happy Danse Soirée", "location":"Verdun (82)", "img":"../../assets/img/events/happy-dance.jpg", "fblink":""},
+      {"day":"07", "month":"MAR", "title":"Carcassonne Tattoo", "location":"Carcassonne (11)", "img":"../../assets/img/events/carcassonne-tattoo.jpg", "fblink":"https://www.facebook.com/events/1711759505625129/"},
+      {"day":"06", "month":"MAR", "title":"Soirée Gatorgumbo au Madison", "location":"Aucamville (31)", "img":"../../assets/img/events/madison.jpg", "fblink":""}
     ] },
   { "year":"2019",
     "events": [
