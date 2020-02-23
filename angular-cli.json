@@ -20,7 +20,7 @@
       "styles": [
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [ "assets/js/airtable.browser.js"],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

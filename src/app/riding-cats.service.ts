@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 import { Video } from './interfaces/video';
+import * as Airtable from  '../assets/js/airtable.browser.js';
+//declare var Airtable: any;
 
 @Injectable()
 export class RidingCatsService {
@@ -31,6 +33,10 @@ export class RidingCatsService {
     }
 
     getPhotoList(): Promise<any> {
+        return this.http.get('assets/data/gallery.json').toPromise();
+    }
+
+    getActu(): Promise<any> {
         return this.http.get('assets/data/gallery.json').toPromise();
     }
 }
