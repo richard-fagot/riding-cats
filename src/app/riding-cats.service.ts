@@ -3,8 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 import { Video } from './interfaces/video';
-import * as Airtable from  '../assets/js/airtable.browser.js';
-//declare var Airtable: any;
 
 @Injectable()
 export class RidingCatsService {
